@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flweb_layout/widgets/navigation_bar/navigation_bar.dart';
 
 class HomeView extends StatelessWidget {
 
@@ -6,7 +7,12 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold();
+    
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(children: <Widget>[
+        NavigationBar(),
+      ],),
+    );
   }
 }
