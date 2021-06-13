@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flweb_layout/views/home_content_desktop.dart';
-import 'package:flweb_layout/views/home_content_mobile.dart';
+import 'package:flweb_layout/views/home/home_content_desktop.dart';
+import 'package:flweb_layout/views/home/home_content_mobile.dart';
 import 'package:flweb_layout/widgets/navigation_bar/navigation_bar.dart';
 import 'package:flweb_layout/widgets/centered_view/centered_view.dart';
 import 'package:flweb_layout/widgets/navigation_drawer/navigation_drawer.dart';
