@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flweb_layout/views/home/home_content_desktop.dart';
-import 'package:flweb_layout/views/home/home_content_mobile.dart';
 import 'package:flweb_layout/widgets/centered_view/centered_view.dart';
 import 'package:flweb_layout/widgets/navigation_bar/navigation_bar.dart';
 import 'package:flweb_layout/widgets/navigation_drawer/navigation_drawer.dart';
@@ -22,16 +20,9 @@ class LayoutTemplate extends StatelessWidget {
             backgroundColor: Colors.white,
             body: CenteredView(
               child: Column(
-                children: <Widget>[
-                  NavigationBar(),
-                  Expanded(
-                    child: ScreenTypeLayout(
-                      mobile: HomeContentMobile(),
-                      desktop: HomeContentDesktop(),
-                    ),
-                  )
-                ],
+                children: <Widget>[NavigationBar(),Expanded(child: Navigator())],
               ),
-            )));
+            ))
+          );
   }
 }
